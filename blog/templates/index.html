@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<h1>Últimas entradas</h1>
+<br>
+{% for entrada in entradas %}
+<article>
+    <h2>{{ entrada[1] }}</h2>
+    <p><strong>Fecha:</strong> {{ entrada[2] }} | <strong>Autor:</strong> {{ entrada[3] }}</p>
+    <p>{{ entrada[4] }}</p>
+    <a href="/entrada/{{ entrada[0] }}" class="btn btn-primary">Leer más</a>
+</article>
+<br>
+{% else %}
+<p>No hay entradas publicadas todavía.</p>
+{% endfor %}
+{% endblock %}

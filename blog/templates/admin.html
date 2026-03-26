@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<div class="cabecera-seccion">
+    <h1>⚙️ Admin — Entradas</h1>
+    <a href="/admin/nueva" class="btn btn-primary">+ Nueva Entrada</a>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Fecha</th>
+            <th>Autor</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entrada in entradas %}
+        <tr>
+            <td>{{ entrada[0] }}</td>
+            <td>{{ entrada[1] }}</td>
+            <td>{{ entrada[2] }}</td>
+            <td>{{ entrada[3] }}</td>
+            <td>
+                <a href="/admin/editar/{{ entrada[0] }}" class="btn btn-warning">Editar</a>
+                <a href="/admin/eliminar/{{ entrada[0] }}" class="btn btn-danger">Eliminar</a>
+            </td>
+        </tr>
+        {% else %}
+        <tr><td colspan="5">No hay entradas.</td></tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
