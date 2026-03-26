@@ -2,7 +2,6 @@
 
 > Habla de cómo los lenguajes de marcas y lo que hemos visto en la asignatura han hecho que tu proyecto sea posible.
 >
-> 📹 VÍDEO: Tour visual — navega por el front público y el panel admin sin crear datos.
 
 **Introducción**
 
@@ -21,4 +20,5 @@ Utilizaremos un CSS sencillo, sin complicarnos, queremos algo funcional antes qu
 
 Gracias a estos dos lenguajes de marcado, crearemos una página web que, de momento, sin ser funcional, y a falta de base de datos, solamente nos mostrará las funciones que tendrá más adelante.
 
-🎥 Vídeo: [PEGA AQUÍ EL ENLACE DE YOUTUBE O GOOGLE DRIVE]
+🎥 Vídeo: (https://drive.google.com/file/d/1xQnJoEOTCYG48pY6KAH1Ko47UVRAwlWI/view?usp=sharing)
+
